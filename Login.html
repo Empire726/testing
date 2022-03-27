@@ -1,0 +1,47 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QVY Insurance online</title>
+    <link rel="stylesheet" href="css/sign.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Login</a>
+        <a href="Registration.html">signin</a>
+        
+    </div>
+
+    <form action="Booking.html" method="post">
+
+        <h1>QVY Insurance online</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span>Customer Login</legend>
+            <label for="name">UserName:</label>
+            <input type="text" id="name" name="user_name" required="" data-error="enter username">
+
+            
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="user_password" required="">
+
+        </fieldset>
+        
+        <button type="submit" onClick="myFunction()">Login</button>
+    <div class="container signin">
+        <p>Already have an account? <a href="Registration.html">Sign in</a>.</p>
+    </div>
+    </form>
+
+
+</body>
+<script>
+    function myFunction() {
+        window.location.href = "Registration.html";
+    }
+</script>
+
+</html>

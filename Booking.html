@@ -1,0 +1,71 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QVY Insurance online</title>
+    <link rel="stylesheet" href="css/sign.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="Login.html">Login</a>
+        <a href="#Signin">signin</a>
+    </div>
+
+    <form action="Booking.html" method="post" submit>
+
+
+        <h1>Ticket Booking new</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span>Ticket Booking</legend>
+            <label for="number">PNR Number:</label>
+            <input type="number" id="name" name="user_name" required="" data-error="enter username"
+                oninvalid="this.setCustomValidity('Enter Customer id')" oninput="this.setCustomValidity('')">
+        <label for="date">Travel Date:</label>
+        <input type="date" id="name" name="user_name" required="" data-error="enter username"
+            oninvalid="this.setCustomValidity('Enter a valid Date')" oninput="this.setCustomValidity('')">
+            <label for="bio">Source Airport:</label>
+        <input type="number" id="name" name="user_name" required="" data-error="enter username"
+            oninvalid="this.setCustomValidity('Enter Customer id')" oninput="this.setCustomValidity('')">
+                <label for="name">Destination Airport:</label>
+                <input type="number" id="name" name="user_name" required="" data-error="enter username"
+                    oninvalid="this.setCustomValidity('Enter Customer id')" oninput="this.setCustomValidity('')">
+
+        <label for="name">Ticket Status</label>
+    <select name="cars" id="cars" oninvalid="this.setCustomValidity('Ticket Status Required')" oninput="this.setCustomValidity('')">
+        <option value="volvo"> </option>
+        <option value="volvo">Success</option>
+        <option value="saab">Pending</option>
+        
+    </select>
+    <label for="name">Seat Prefrence</label>
+    <select name="cars" id="cars" oninvalid="this.setCustomValidity('Seat Prefrence Required')" oninput="this.setCustomValidity('')">
+        <option value="volvo"> </option>
+        <option value="volvo">Active</option>
+        <option value="saab">Decline</option>
+    
+    </select>
+    <label for="name">Meal Prefrence</label>
+    <select name="cars" id="cars" oninvalid="this.setCustomValidity('Meal Prefrence Required')" oninput="this.setCustomValidity('')">
+        <option value="volvo"> </option>
+        <option value="volvo">Active</option>
+        <option value="saab">Decline</option>
+    
+    </select>
+
+        </fieldset>
+
+        <button type="submit" onClick="myFunctions()">Book Ticket</button>
+        
+    </form>
+<script>
+    function myFunctions() {
+        window.location.href = "Book.html";
+    }
+</script>
+
+</body>
+
+</html>
